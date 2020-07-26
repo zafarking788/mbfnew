@@ -256,7 +256,7 @@ if __name__ == '__main__':
                                         for passw in set(listpass):
                                                 ex.submit(login,(users[1]),(passw))
                 if check != 0 or result != 0:
-                        print("         \n \x1b[33m     Done lala. file saved in : ")
+                        print("        	  	 \n \x1b[33m     Done lala. file saved in : ")
                         print("            \x1b[1;32m   - life : results-life.txt")
                         print("            \x1b[1;31m  - checkpoint : results-check.txt")
                         exit("             \x1b[1;36m   # Tools author : Zafar Abbas")
